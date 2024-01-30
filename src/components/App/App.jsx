@@ -2,12 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 
-import { getToken } from 'redux/selectors';
+import { getToken } from '../../redux/selectors';
 import AppBar from 'components/AppBar';
 import Container from 'components/Container';
-import { RestrictedRoute } from 'components/RestrictedRoute';
-import { PrivatRoute } from 'components/PrivatRoute';
-import { useGetCurrentQuery } from 'redux/userApi';
+import { RestrictedRoute } from 'components/shared/RestrictedRoute';
+import { PrivatRoute } from 'components/shared/PrivateRoute';
+import { useGetCurrentQuery } from '../../redux/userApi';
 
 import css from './App.module.css';
 
