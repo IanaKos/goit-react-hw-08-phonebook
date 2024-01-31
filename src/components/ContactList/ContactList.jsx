@@ -2,10 +2,10 @@ import { useSelector } from 'react-redux';
 
 import css from './ContactList.module.css';
 import ContactItem from './ContactItem';
-import { getFilteredContacts } from 'redux/selectors';
+import { getFilteredContacts } from '../../redux/selectors';
 
-import { useFetchContactsQuery } from 'redux/contactsSlice';
-import { getFilter } from 'redux/selectors';
+import { useFetchContactsQuery } from '../../redux/contactsSlice';
+import { getFilter } from '../../redux/selectors';
 
 const ContactList = () => {
   const filter = useSelector(getFilter);

@@ -8,7 +8,7 @@ import ButtonStyled from '../../shared/ButtonStyled/ButtonStyled';
 import {
   useDeleteContactMutation,
   useUpdateContactMutation,
-} from 'redux/contactsSlice';
+} from '../../../redux/contactsSlice';
 import css from './ContactItem.module.css';
 
 const ContactItem = ({ id, name, number }) => {
